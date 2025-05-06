@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>傩面具五官组合器</title>
+  <style>
+    body { font-family: sans-serif; background: #f5f5f5; text-align: center; }
+    .mask-container { position: relative; width: 600px; height: 800px; margin: auto; }
+    .mask-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .controls { margin-top: 30px; }
+    .control-group { margin: 15px 0; }
+    select { padding: 5px 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h2>傩面具五官自由组合器</h2>
+<div class="mask-container">
+  <img id="headdress" class="mask-layer" src="headdress1.png">
+  <img id="eye" class="mask-layer" src="eye1.png">
+  <img id="nose" class="mask-layer" src="nose1.png">
+  <img id="mouth" class="mask-layer" src="mouth1.png">
+</div>
+
+<div class="controls">
+  <div class="control-group">
+    <label>选择头饰：</label>
+    <select onchange="changeFeature('headdress', this.value)">
+      <option value="1">头饰1</option><option value="2">头饰2</option><option value="3">头饰3</option><option value="4">头饰4</option><option value="5">头饰5</option><option value="6">头饰6</option><option value="7">头饰7</option><option value="8">头饰8</option><option value="9">头饰9</option><option value="10">头饰10</option><option value="11">头饰11</option><option value="12">头饰12</option><option value="13">头饰13</option><option value="14">头饰14</option><option value="15">头饰15</option><option value="16">头饰16</option><option value="17">头饰17</option><option value="18">头饰18</option><option value="19">头饰19</option><option value="20">头饰20</option><option value="21">头饰21</option><option value="22">头饰22</option><option value="23">头饰23</option><option value="24">头饰24</option><option value="25">头饰25</option><option value="26">头饰26</option><option value="27">头饰27</option><option value="28">头饰28</option><option value="29">头饰29</option><option value="30">头饰30</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label>选择眼睛：</label>
+    <select onchange="changeFeature('eye', this.value)">
+      <option value="1">眼睛1</option><option value="2">眼睛2</option><option value="3">眼睛3</option><option value="4">眼睛4</option><option value="5">眼睛5</option><option value="6">眼睛6</option><option value="7">眼睛7</option><option value="8">眼睛8</option><option value="9">眼睛9</option><option value="10">眼睛10</option><option value="11">眼睛11</option><option value="12">眼睛12</option><option value="13">眼睛13</option><option value="14">眼睛14</option><option value="15">眼睛15</option><option value="16">眼睛16</option><option value="17">眼睛17</option><option value="18">眼睛18</option><option value="19">眼睛19</option><option value="20">眼睛20</option><option value="21">眼睛21</option><option value="22">眼睛22</option><option value="23">眼睛23</option><option value="24">眼睛24</option><option value="25">眼睛25</option><option value="26">眼睛26</option><option value="27">眼睛27</option><option value="28">眼睛28</option><option value="29">眼睛29</option><option value="30">眼睛30</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label>选择鼻子：</label>
+    <select onchange="changeFeature('nose', this.value)">
+      <option value="1">鼻子1</option><option value="2">鼻子2</option><option value="3">鼻子3</option><option value="4">鼻子4</option><option value="5">鼻子5</option><option value="6">鼻子6</option><option value="7">鼻子7</option><option value="8">鼻子8</option><option value="9">鼻子9</option><option value="10">鼻子10</option><option value="11">鼻子11</option><option value="12">鼻子12</option><option value="13">鼻子13</option><option value="14">鼻子14</option><option value="15">鼻子15</option><option value="16">鼻子16</option><option value="17">鼻子17</option><option value="18">鼻子18</option><option value="19">鼻子19</option><option value="20">鼻子20</option><option value="21">鼻子21</option><option value="22">鼻子22</option><option value="23">鼻子23</option><option value="24">鼻子24</option><option value="25">鼻子25</option><option value="26">鼻子26</option><option value="27">鼻子27</option><option value="28">鼻子28</option><option value="29">鼻子29</option><option value="30">鼻子30</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label>选择嘴巴：</label>
+    <select onchange="changeFeature('mouth', this.value)">
+      <option value="1">嘴巴1</option><option value="2">嘴巴2</option><option value="3">嘴巴3</option><option value="4">嘴巴4</option><option value="5">嘴巴5</option><option value="6">嘴巴6</option><option value="7">嘴巴7</option><option value="8">嘴巴8</option><option value="9">嘴巴9</option><option value="10">嘴巴10</option><option value="11">嘴巴11</option><option value="12">嘴巴12</option><option value="13">嘴巴13</option><option value="14">嘴巴14</option><option value="15">嘴巴15</option><option value="16">嘴巴16</option><option value="17">嘴巴17</option><option value="18">嘴巴18</option><option value="19">嘴巴19</option><option value="20">嘴巴20</option><option value="21">嘴巴21</option><option value="22">嘴巴22</option><option value="23">嘴巴23</option><option value="24">嘴巴24</option><option value="25">嘴巴25</option><option value="26">嘴巴26</option><option value="27">嘴巴27</option><option value="28">嘴巴28</option><option value="29">嘴巴29</option><option value="30">嘴巴30</option>
+    </select>
+  </div>
+</div>
+
+<script>
+  function changeFeature(part, index) {
+    document.getElementById(part).src = part + index + ".png";
+  }
+</script>
+
+</body>
+</html>
