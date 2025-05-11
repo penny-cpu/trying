@@ -1,0 +1,36 @@
+
+body {
+  font-family: "STKaiti", serif;
+  background: #f8f4ec;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.mask-view {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+.mask-view img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+}
+.controls button {
+  margin: 1rem 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background: #833;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
